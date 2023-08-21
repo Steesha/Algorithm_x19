@@ -18,10 +18,5 @@
 
 #pragma once
 #include <string>
-class PeAuthSign
-{
-public:
-	PeAuthSign() {}
-	~PeAuthSign() {}
-	std::string sign(const std::string& data);
-};
+
+std::string sign(const std::string& data);

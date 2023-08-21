@@ -28,10 +28,8 @@ int main()
 		"2.7.5.227892c53528dbe41c07311c3a123e70ba37fd2.7.18.229723082410acd"
 		"8f646b9354cbb04e9c41a4d2b3e7ca013bb30a74d822579860c042bfadcb57c-34"
 		"52-4ea8-aaa2-cd7f2791a3f3";
-
-	std::unique_ptr<PeAuthSign> sign(new PeAuthSign());
-	std::string dataOut = sign->sign(dataIn);
-	std::cout << "[sign result]" << dataOut << "\n";
+	std::string dataOut = sign(dataIn);
+	std::cout << dataOut << "\n";
 
 	system("pause");
 	return 0;
